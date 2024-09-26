@@ -10,7 +10,7 @@ export const GifExpertApp = () => {
 
         if( categories.includes(newCategory) ) return;
 
-        setCategories([ ...categories, newCategory ]);
+        setCategories([ newCategory, ...categories  ]);
 
         
     }
@@ -30,7 +30,7 @@ export const GifExpertApp = () => {
             />
             
             {
-                categories.map( category => (
+                categories.map( (category) => (
 
                         <GifGrid 
                             key={ category } 

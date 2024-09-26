@@ -17,7 +17,7 @@ export const useEffectGifs = ( category ) => {
    
     useEffect(  () => {
         getImages();
-    }, [ ]);
+    }, []);
 
     return{
         images,
